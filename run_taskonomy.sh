@@ -1,0 +1,18 @@
+python train_ssl2taskonomy.py \
+    --pin_memory \
+    --taskonomy_variant fullplus \
+    --distributed_backend dp \
+    --max_images_test 60000 \
+    --n_passes_epoch -1 \
+    --max_steps 60000 \
+    --val_check_interval 10 \
+    --limit_val_batches 1. \
+    --log_every_n_steps 50 \
+    --lr_warmup_step 1000 \
+    --seed 0 \
+    --data_seed 0 \
+    --ssl_name moco \
+    --taskonomy_domain normal \
+    --weight_decay 1e-3 \
+    --max_images_train 80000 \
+    --max_images_val 20000

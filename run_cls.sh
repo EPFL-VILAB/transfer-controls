@@ -1,0 +1,20 @@
+python train_ssl2taskonomy.py \
+    --pin_memory \
+    --max_images_test 60000 \
+    --n_passes_epoch -1 \
+    --max_steps 40000 \
+    --val_check_interval 1000 \
+    --log_every_n_steps 100 \
+    --lr_warmup_step 0 \
+    --ssl_name swav \
+    --max_images_train 4860 \
+    --max_images_val 1215 \
+    --data_seed 1 \
+    --seed 1 \
+    --dataset cifar100 \
+    --taskonomy_domain classification \
+    --batch_size 64 \
+    --lr 1e-4 \
+    --weight_decay 1e-4 \
+    --num_sanity_val_steps 0 \
+    --stratified
