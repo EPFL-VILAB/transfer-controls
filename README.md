@@ -117,5 +117,10 @@ You can find the plotting example in the [`Vizualization-Example.ipynb`](./Plott
 
 If you find this paper or code useful, please cite this paper:
 ```
-TBD
+@article{atanov2022simple,
+      title={Simple Control Baselines for Evaluating Transfer Learning}, 
+      author={Atanov, Andrei and Xu, Shijian and Beker, Onur and Filatov, Andrei and Zamir, Amir},
+      year={2022},
+      journal={arXiv preprint arXiv:2202.03365},
+}
 ```
